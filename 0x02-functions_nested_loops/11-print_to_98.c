@@ -2,6 +2,12 @@
 #include "6-abs.c"
 #include <stdio.h>
 
+/**
+ * print - show numbers till 98
+ * @n: number to begin from
+ *
+ * Return: numbers upto 98
+ */
 void print_to_98(int n)
 {
 	int i;
