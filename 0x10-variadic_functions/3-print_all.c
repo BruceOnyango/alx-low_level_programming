@@ -6,7 +6,6 @@
  * @list:arg
  * Return: void
  */
-
 void p_char(va_list list)
 {
 	printf("%c", va_arg(list, int));
@@ -80,17 +79,14 @@ void print_all(const char * const format, ...)
 				printf("%s", s);
 				t[j].T_func(valist);
 				s = ", ";
-
 				break;
 			}
 			j++;
 		}
 		i++;
 	}
-
 	va_end(valist);
 	printf("\n");
-
 }
 
 
