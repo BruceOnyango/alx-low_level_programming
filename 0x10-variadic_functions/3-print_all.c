@@ -19,7 +19,9 @@ void p_char(va_list list)
 void p_string(va_list list)
 {
 	char *str;
+	
 	str = va_arg(list, char*);
+	
 	if (str == NULL)
 		str = "(nil)";
 printf("%s", str);
@@ -50,6 +52,7 @@ void p_float(va_list list)
 void print_all(const char * const format, ...)
 {
 	unsigned int i, j;
+	
 	t_print t[] = {
 		{"c", p_char},
 		{"s", p_string},
